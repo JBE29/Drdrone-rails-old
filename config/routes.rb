@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :join_table_user_to_posts
+  resources :categories
+  resources :posts
   devise_for :users,
              controllers: {
                sessions: 'users/sessions',
