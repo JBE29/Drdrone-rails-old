@@ -26,6 +26,7 @@ function App() {
     <div className="App">
       <h1>Hello Dr Drone</h1>
       <Posts posts={posts} />
+      <h5>Fin d'affichage</h5>
     </div>
   );
 }
