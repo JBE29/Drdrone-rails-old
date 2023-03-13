@@ -1688,3 +1688,18 @@ Processing by Api::PostsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 981)
 
 
+Started GET "/api/posts" for 127.0.0.1 at 2023-03-13 17:15:17 +0100
+Started GET "/api/posts" for 127.0.0.1 at 2023-03-13 17:15:17 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PostsController#index as HTML
+Processing by Api::PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/posts_controller.rb:8:in `index'
+  ↳ app/controllers/api/posts_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 11.5ms | ActiveRecord: 0.6ms | Allocations: 39481)
+
+
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 39527)
+
+
